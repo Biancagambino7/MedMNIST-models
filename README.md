@@ -142,7 +142,7 @@ For **DermaMNIST**, a well-designed **CNN** provides the best tradeoff between:
 - Training time
 - Computational efficiency
 
-More complex models such as **ResNet** and **ViT** did not offer sufficient performance gains to justify their added cost in this setting.
+I noticed that wether it was small amounts of epochs and large amounts of epochs, CNN was still the highest accuracy just the difference in number varied with small amounts it was closer to linear and mlp accuracies and larger was closer to resnet and vit accuracy, but still always larger. Overall, the more complex models such as **ResNet** and **ViT** did not offer sufficient performance gains to justify their added cost in this setting. CNN was the greatest between accuracy and time. 
 
 ---
 
