@@ -3,7 +3,7 @@
 This project explores **image classification on the MedMNIST dataset**, with a specific focus on **DermaMNIST**.  
 The goal is to compare multiple machine learning and deep learning models to determine which performs best when considering **both accuracy and computational efficiency**.
 
-All experiments are implemented and run in **Google Colab**.
+All experiments are implemented and run in **Google Colab**, but you can find the main dataset [here](https://medmnist.com/)
 
 ---
 
