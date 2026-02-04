@@ -64,6 +64,18 @@ This ensures performance differences are due to **model architecture**, not trai
 
 ---
 
+### 4️⃣ Running the Models
+This is where you will find the types models evaluated which you can then compare:
+ - Linear
+ - MLP
+ - CNN
+ - ResNet
+ - ViT
+
+You can see accuracy after each step, and then compare at the very end to find the best one.
+
+---
+
 ## 🧪 Models Evaluated
 
 The following models were implemented and tested on the same dataset:
