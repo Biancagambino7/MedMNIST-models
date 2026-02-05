@@ -134,7 +134,7 @@ CNN Accuracy: 0.7884401114206128, ResNet Accuracy: 0.3279944289693593,
 
 I noticed that weather it was small amounts of epochs and large amounts of epochs, CNN was still the highest accuracy just the difference in number varied with small amounts it was closer to linear and mlp accuracies and larger was closer to resnet and vit accuracy, but still always larger. Overall, the more complex models such as **ResNet** and **ViT** did not offer sufficient performance gains to justify their added cost in this setting. CNN was the greatest between accuracy and time. </b> </b>
 
-The CNN significantly outperformed the other models because MedMNIST is a small, structured image dataset where convolutional architectures efficiently capture local spatial features, while models like MLPs lose spatial information and transformers require larger datasets to perform well.
+The CNN significantly outperformed the other models because MedMNIST consists of low-resolution (28×28) medical images and a relatively small dataset, where preserving local spatial structure is critical. Convolutional layers efficiently capture edges and textures while sharing weights, reducing overfitting and enabling faster convergence with small batch sizes and limited training epochs. In contrast, MLPs lose spatial information when images are flattened, and transformer-based models such as ViT require larger datasets, higher image resolutions, and larger batch sizes to learn effective spatial representations.
 
 ---
 
