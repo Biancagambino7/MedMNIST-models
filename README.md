@@ -127,7 +127,7 @@ The following models were implemented and tested on the same dataset:
 ## ✅ Conclusion
 
 - For epoch of 10 these were the results: Linear Accuracy: 0.4596100278551532, MLP Accuracy: 0.577158774373259,
-- CNN Accuracy: 0.7884401114206128, ResNet Accuracy: 0.3279944289693593, 
+CNN Accuracy: 0.7884401114206128, ResNet Accuracy: 0.3279944289693593, 
 
 - For **DermaMNIST**, a well-designed **CNN** provides the best tradeoff between:
   - Accuracy, Training time, Computational efficiency
