@@ -65,7 +65,7 @@ This ensures performance differences are due to **model architecture**, not trai
 ---
 
 ### 4️⃣ Running the Models
-This is where you will find the types models evaluated which you can then compare:
+This is where you will find the types of models evaluated which you can then compare:
  - Linear
  - MLP
  - CNN
@@ -132,7 +132,9 @@ The following models were implemented and tested on the same dataset:
 - For **DermaMNIST**, a well-designed **CNN** provides the best tradeoff between:
   - Accuracy, Training time, Computational efficiency
 
-I noticed that weather it was small amounts of epochs and large amounts of epochs, CNN was still the highest accuracy just the difference in number varied with small amounts it was closer to linear and mlp accuracies and larger was closer to resnet and vit accuracy, but still always larger. Overall, the more complex models such as **ResNet** and **ViT** did not offer sufficient performance gains to justify their added cost in this setting. CNN was the greatest between accuracy and time. 
+I noticed that weather it was small amounts of epochs and large amounts of epochs, CNN was still the highest accuracy just the difference in number varied with small amounts it was closer to linear and mlp accuracies and larger was closer to resnet and vit accuracy, but still always larger. Overall, the more complex models such as **ResNet** and **ViT** did not offer sufficient performance gains to justify their added cost in this setting. CNN was the greatest between accuracy and time. </b> </b>
+
+The CNN significantly outperformed the other models because MedMNIST is a small, structured image dataset where convolutional architectures efficiently capture local spatial features, while models like MLPs lose spatial information and transformers require larger datasets to perform well.
 
 ---
 
