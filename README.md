@@ -1,7 +1,7 @@
 # 🧠 Model Comparison on MedMNIST (DermaMNIST)
 
 This project explores **image classification on the MedMNIST dataset**, with a specific focus on **DermaMNIST**.  
-The goal is to compare multiple machine learning and deep learning models to determine which performs best when considering **both accuracy and computational efficiency**.
+The goal is to compare multiple machine learning and deep learning models to determine which performs best when considering **both accuracy and computational efficiency**. From there we used an autoencoder and a diffusion model to essentially scan the images, pull essential feautres, and then recosntruct the original image that are very similar, but just smoother. The diffusion model works similarly, however it adds noise and then denoises the images to make them smoother.
 
 All experiments are implemented and run in **Google Colab**, but you can find the main dataset [here](https://medmnist.com/)
 
@@ -74,6 +74,9 @@ This is where you will find the types of models evaluated which you can then com
 
 You can see accuracy after each step, and then compare at the very end to find the best one.
 
+### Autoencoder and Diffusion Models
+This tests weather an autoencoder and a diffusion model are able to take the images features and successfully recreate them.
+
 ---
 
 ## 🧪 Models Evaluated
@@ -121,6 +124,9 @@ The following models were implemented and tested on the same dataset:
   - Longest training time
   - Did not consistently outperform CNN on this dataset
   - Less efficient for small medical image datasets like DermaMNIST
+ 
+ - **Autoencoder**
+   - The images in both models were successfully recreated, they were able to take out the noise and make them less blurry. The only problem with both was discoloration, which could be a mix of using small amounts of pixels and also skin has gradients that are hard for models to track accurately. So overall both of these models worked.
 
 ---
 
@@ -135,6 +141,8 @@ CNN Accuracy: 0.7884401114206128, ResNet Accuracy: 0.3279944289693593,
 I noticed that weather it was small amounts of epochs and large amounts of epochs, CNN was still the highest accuracy just the difference in number varied with small amounts it was closer to linear and mlp accuracies and larger was closer to resnet and vit accuracy, but still always larger. Overall, the more complex models such as **ResNet** and **ViT** did not offer sufficient performance gains to justify their added cost in this setting. CNN was the greatest between accuracy and time. </b> </b>
 
 The CNN significantly outperformed the other models because MedMNIST consists of low-resolution (28×28) medical images and a relatively small dataset, where preserving local spatial structure is critical. Convolutional layers efficiently capture edges and textures while sharing weights, reducing overfitting and enabling faster convergence with small batch sizes and limited training epochs. In contrast, MLPs lose spatial information when images are flattened, and transformer-based models such as ViT require larger datasets, higher image resolutions, and larger batch sizes to learn effective spatial representations.
+
+The images in both models were successfully recreated, they were able to take out the noise and make them less blurry. The only problem with both was discoloration, which could be a mix of using small amounts of pixels and also skin has gradients that are hard for models to track accurately. So overall both of these models worked.
 
 ---
 
